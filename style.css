@@ -30,10 +30,16 @@ header {
   background-color: #4DD7FA;
 }
 .rangeSlider {
-  max-width: 90%;
+  width: 95%;
 }
 .blueNav div {
   margin: 10px 10px 20px 2px;
+}
+.artistDrop {
+  width: 95%;
+}
+.albumDrop {
+  width: 95%;
 }
 
 /****** YELLOW BOX ******/
@@ -92,6 +98,7 @@ header {
 .filterButton {
   clear: both;
   margin: auto;
+  text-align: center;
 }
 
 /****** lowerNav DIV GROUP ******/
