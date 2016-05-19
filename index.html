@@ -1,13 +1,104 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Music History</title>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <title>Music History</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-<body>
+  <body>
 
+  	<header id="header">                        <!--    REDNAV start   -->
+      <ul class="navbar">
+        <li>View Music</li> |
+        <li><a href="index.html">Add Music</a></li> |
+        <li><a href="index.html">Profile</a></li>
+      </ul>
+    </header>                                   <!--    REDNAV stop   -->
 
-</body>
+    <div class="lowerNav">                 <!--    LOWERNAV start   -->
+      <div id="blueNav" class="blueNav">        <!--      BLUENAV start    -->
+        <div><!-- Song Length Div -->
+          <label>
+            Song length:
+            <input type="range" class="rangeSlider">
+          </label>
+        </div>
+        
+        <div><!-- Artist Div -->
+          <label class="artist" for="artistDropDown">Artist:</label>
+            <p><select name="Artist" id="artistDropDown" class="artistDrop">
+              <option value="">options</option>
+              <option value="">Abba</option>
+              <option value="">AC/DC</option>
+              <option value="">Atmosphere</option>
+            </select></p>                <!-- I don't like this method of line breaking: <p> -->
+        </div>
+        
+        <div><!-- Album Div -->
+          <label for="albumDropDown">Album:</label>
+            <p><select name="Album" id="albumDropDown" class="albumDrop">
+              <option value="">options</option>
+              <option value="">36 Chambers</option>
+              <option value="">Dummy</option>
+              <option value="">Barter 6</option>
+            </select></p>                <!-- I don't like this method of line breaking: <p> -->
+        </div>
+
+        Genre:
+        <div class="genreChecks"><!-- Genre Div -->
+          <ul class="leftChecks">
+            <li><input type="checkbox" name="rock"> <label for="checkbox">Rock</label></li>
+            <li><input type="checkbox" name="pop"> <label for="checkbox">Pop</label></li>
+            <li><input type="checkbox" name="blues"> <label for="checkbox">Blues</label></li>
+          </ul>
+          <ul class="rightChecks">
+            <li><input type="checkbox" name="classical"> <label for="checkbox">Classical</label></li>
+            <li><input type="checkbox" name="jazz"> <label for="checkbox">Jazz</label></li>
+            <li><input type="checkbox" name="hipHop"> <label for="checkbox">Hip Hop</label></li>
+          </ul>
+        </div>
+
+        <div class="filterButton"><!-- BUTTON Div -->
+          <button class="filterButton1" type="button">Filter</button>
+        </div>
+      </div>                                 <!--      BLUENAV stop   -->
+
+      <div id="yellowNav" class="yellowNav"> <!--     YELLOWNAV start   -->
+        <div class="songInfo">
+          <h2 class="songTitle">Song Name</h2>
+          <ul class="songName">
+            <li>Artist name</li> |
+            <li>Album name</li> |
+            <li>Genre</li>
+          </ul>
+        </div>
+        <div class="songInfo">
+          <h2 class="songTitle">Song Name</h2>
+          <ul class="songName">
+            <li>Artist name</li> |
+            <li>Album name</li> |
+            <li>Genre</li>
+          </ul>
+        </div>
+        <div class="songInfo">
+          <h2 class="songTitle">Song Name</h2>
+          <ul class="songName">
+            <li>Artist name</li> |
+            <li>Album name</li> |
+            <li>Genre</li>
+          </ul>
+        </div>
+        <div class="songInfo">
+          <h2 class="songTitle">Song Name</h2>
+          <ul class="songName">
+            <li>Artist name</li> |
+            <li>Album name</li> |
+            <li>Genre</li>
+          </ul>
+        </div>
+      </div>                                 <!--     YELLOWNAV stop   -->
+    </div>                              <!--    LOWERNAV stop   -->
+
+  </body>
 </html>
