@@ -1,0 +1,101 @@
+/****** UNIVERSAL STARTER ******/
+* {
+  box-sizing: border-box;
+  font-family: Arial, Times, sans-serif; 
+}
+/*Upper Red Navigation CSS*/
+/****** RED BOX ******/
+header {
+	margin: 25px auto;
+	width: 80%;
+	border: 2px solid black;
+	background-color: #FFB4B0;
+  margin-bottom: 10px;
+}
+.navbar li {
+	display: inline-block;
+}
+.navbar {
+  padding-left: 20px;
+}
+
+/*Lower Blue/Yellow Navigation CSS*/
+/****** BLUE BOX ******/
+.blueNav {
+  float: left;
+  height: 400px;
+  padding: 5px;
+  width: 29%;
+  border: 2px solid black;
+  background-color: #4DD7FA;
+}
+.rangeSlider {
+  max-width: 90%;
+}
+.blueNav div {
+  margin: 10px 10px 20px 2px;
+}
+
+/****** YELLOW BOX ******/
+.yellowNav {
+  float: right;
+  height: 400px;
+  padding: 5px;
+  width: 69.5%;
+  border: 2px solid black;
+  background-color: #FEFAC0;
+}
+.songName li {
+  display: inline-block;
+}
+.songName {
+  padding-left: 20px;
+}
+.songTitle {
+  padding-left: 20px;
+}
+.yellowNav h2 {
+  color: #785616;
+}
+
+/****** GENRE CHECKMARKS ******/
+.leftChecks {
+  float: left;
+  padding-left: 1px;
+  list-style: none;
+}
+.rightChecks {
+  float: right;
+  padding-right: 3px;
+  padding-left: 3px;
+  list-style: none; 
+}
+.genreChecks ul {
+  display: inline-block;
+  margin: 0 0 10px 0;
+}
+.genreChecks li {
+  padding-bottom: 5px;
+}
+
+/****** FILTER BUTTON ******/
+.filterButton1 {
+  margin: 15px auto 6px;
+  padding: 2px 5px;
+  width: 100px;
+  max-width: 80%;
+  background-color: lightgrey;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.filterButton {
+  clear: both;
+  margin: auto;
+}
+
+/****** lowerNav DIV GROUP ******/
+.lowerNav {
+  margin: auto;
+  width: 80%;
+}
