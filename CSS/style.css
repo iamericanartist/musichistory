@@ -64,6 +64,14 @@ header {
   color: #785616;
 }
 
+
+/****** ELEMENTS ADDED TO DOM (MusicHist2) ******/
+.addToDomEl {
+  padding: 2px 20px;
+  color: #785616;
+
+}
+
 /****** GENRE CHECKMARKS ******/
 .leftChecks {
   float: left;
