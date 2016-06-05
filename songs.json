@@ -1,19 +1,52 @@
 {
   "songs": [
     {
-      "title": "The Walk",
-      "artist": "Mayer Hawthorne",
-      "album": "How Do You Do"
+      "title": "Ego Trip",
+      "artist": "De La Soul",
+      "album": "Buhloone Mindstate",
+      "genre": "Hip Hop"
     },
     {
-      "title": "Medicine",
-      "artist": "Grace Potter",
-      "album": "Grace Potter and the Nocturnals"      
+      "title": "Am I Wrong",
+      "artist": "Anderson Paak",
+      "album": "Malibu",
+      "genre": "R & B"
     },
     {
-      "title": "Legs",
-      "artist": "ZZ Top",
-      "album": "Eliminator"
+      "title": "Feel The Pain",
+      "artist": "Dinosaur Jr.",
+      "album": "Without A Sound",
+      "genre": "Rock"
+    },
+    {
+      "title": "Torture",
+      "artist": "Danny Brown",
+      "album": "Old",
+      "genre": "Hip Hop"
+    },
+    {
+      "title": "Call Your Girlfriend",
+      "artist": "Robyn",
+      "album": "Body Talk",
+      "genre": "Pop"
+    },
+    {
+      "title": "Blue Boy",
+      "artist": "Mac Demarco",
+      "album": "Salad Days",
+      "genre": "Rock"
+    },
+    {
+      "title": "Alright",
+      "artist": "Kendrick Lamar",
+      "album": "To Pimp a Butterfly",
+      "genre": "Hip Hop"
+    },
+    {
+      "title": "Watered Down",
+      "artist": "Swearin'",
+      "album": "Surfing Strange",
+      "genre": "Rock"
     }
   ]
 }

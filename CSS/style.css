@@ -1,16 +1,34 @@
+/*My Colors:
+Header: rgba(065,131,178, .9)
+Left - filterNav: rgba(156,214,255, .9)
+    light Blue: rgba(181,224,255, .9);
+right(YELLOW)nav: rgba(178,169,157, .9);
+accent color: rgba(255,208,139,.9);
+*/
 /****** UNIVERSAL STARTER ******/
 * {
   box-sizing: border-box;
-  font-family: Arial, Times, sans-serif; 
+  font-family: Arial, Times, sans-serif;
 }
+html {
+  height: 100%;
+  background: url(https://raw.githubusercontent.com/nss-day-cohort-14/static-web-group-project-dos-teamlunchroom/master/images/wall.jpg) no-repeat center center fixed; 
+  background-size: cover;
+}
+body {
+  /*background-color: rgba(181,224,255, .2);*/
+}
+
 /*Upper Red Navigation CSS*/
 /****** RED BOX ******/
 header {
 	margin: 25px auto;
 	width: 80%;
-	border: 2px solid black;
-	background-color: #FFB4B0;
+  border-radius: 0px 20px 0px 0px;
+	border: 2px solid rgba(20, 20, 20, 0.5);
+	background-color: rgba(065,131,178, .75);
   margin-bottom: 10px;
+  box-shadow: 0px 3px 4px 0px rgba(30,33,41,0.7);
 }
 .navbar li {
 	display: inline-block;
@@ -19,20 +37,24 @@ header {
   padding-left: 20px;
 }
 
-/*Lower Blue/Yellow Navigation CSS*/
-/****** BLUE BOX ******/
-.blueNav {
+/*Lower FILTER NAV/Yellow Navigation CSS*/
+/****** FILTER NAV BOX ******/
+.filterNav {
   float: left;
-  height: 400px;
+  height: 500px;
   padding: 5px;
   width: 29%;
-  border: 2px solid black;
-  background-color: #4DD7FA;
+  border-radius: 0px 0px 0px 20px;
+  border: 2px solid rgba(20, 20, 20, 0.5);
+  background-color: rgba(156,214,255, .75);
+  color: rgba(050,050,050, .8);
+  box-shadow: 0px 3px 4px 0px rgba(30,33,41,0.7);
 }
 .rangeSlider {
   width: 95%;
+  margin-top: 20px;
 }
-.blueNav div {
+.filterNav div {
   margin: 10px 10px 20px 2px;
 }
 .artistDrop {
@@ -45,32 +67,56 @@ header {
 /****** YELLOW BOX ******/
 .yellowNav {
   float: right;
-  height: 400px;
+  height: 500px;
   padding: 5px;
   width: 69.5%;
-  border: 2px solid black;
-  background-color: #FEFAC0;
+  border: 2px solid rgba(20, 20, 20, 0.5);
+  background-color: rgba(178,169,157, .75);
+  box-shadow: 0px 3px 4px 0px rgba(30,33,41,0.7);
+  overflow: auto;
 }
-.songName li {
+.addToDomEl {
+  padding: 2px 20px;
+  color: rgba(050,050,050, .8);
+  padding: 0px 15px;
+  /*display: none; Use to HIDE AN ELEMENT */
+}
+.songGroup li {
   display: inline-block;
 }
-.songName {
-  padding-left: 20px;
+.songGroup {
+  padding: 0px 10px 3px;
+  margin: 5px 0px 5px;
+  border-bottom: 1px dashed rgba(020, 020, 020, 0.3);
 }
-.songTitle {
-  padding-left: 20px;
+div .songTitle {
+  color: rgba(20, 20, 20, 0.8);
+  padding-left: 0px;
+  margin: 15px 0px 0px;
 }
-.yellowNav h2 {
-  color: #785616;
+.delButton {
+  float: right;
+  background-color: rgba(120, 120, 120, 0.3);
+  border: 1px solid rgba(020, 020, 020, 0.2);
+  color: rgba(020, 020, 020, 0.5);
+  border-radius: 5px;
+  font-size: .7rem;
+
 }
+.artist {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.genre {
+  color: rgba(065,131,178, .9);
+  font-size: .75rem;
+    font-weight: bold;
+
+}
+
 
 
 /****** ELEMENTS ADDED TO DOM (MusicHist2) ******/
-.addToDomEl {
-  padding: 2px 20px;
-  color: #785616;
-
-}
 
 /****** GENRE CHECKMARKS ******/
 .leftChecks {
@@ -98,8 +144,8 @@ header {
   padding: 2px 5px;
   width: 100px;
   max-width: 80%;
-  background-color: lightgrey;
-  border: 2px solid black;
+  background-color: rgba(120, 120, 120, 0.5);
+  border: 2px solid rgba(020, 020, 020, 0.5);
   border-radius: 5px;
   font-size: 16px;
 }
