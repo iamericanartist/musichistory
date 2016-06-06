@@ -1,6 +1,6 @@
 
 //define empty "songs" array, and ADD songs with "songs[songs.length] below"
-var songDomEl= document.getElementById("yellowNav");
+var songDomEl= document.getElementById("outputNav");
 
 // var songs = [];
 // songs[songs.length] = "Legs > by Z*ZTop on the album Eliminator";
@@ -29,7 +29,6 @@ var songDomEl= document.getElementById("yellowNav");
 
 
 ////////////////////// JSON Interactions ///////////////////////
-
 var JSONParsed;
 
 function executeThisCodeAfterFileIsLoaded () {
@@ -52,7 +51,6 @@ function executeThisCodeIfXHRFails () {
 	console.log("7 >>> this.responseText FILE FAILS =", this.responseText);
 }
 
-
 function myDisplay () {
   console.log("8 This is now useable!!!!!!!", JSONParsed);
   for (var i = 0; i < JSONParsed.songs.length; i++) {
@@ -66,7 +64,12 @@ function myDisplay () {
       <li class="album">${JSONParsed.songs[i].album}</li> | 
       <li class="genre">${JSONParsed.songs[i].genre}</li>
       </ul></div>`
+
   }
+  document.getElementById("deleteButton(i)").addEventListener("click", function(event) {
+    console.log("event", event);
+    // songDomEl.innerHTML += `${event.target.innerHTML}`
+  });
 }
 
 
@@ -79,4 +82,3 @@ myRequest.send();  // Tell the XHR object to start
 // XHR objects emit events when their operation is complete, or an error occurs
 myRequest.addEventListener("load", executeThisCodeAfterFileIsLoaded);
 myRequest.addEventListener("error", executeThisCodeIfXHRFails);
-

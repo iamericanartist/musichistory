@@ -2,7 +2,7 @@
 Header: rgba(065,131,178, .9)
 Left - filterNav: rgba(156,214,255, .9)
     light Blue: rgba(181,224,255, .9);
-right(YELLOW)nav: rgba(178,169,157, .9);
+right(outputNav)nav: rgba(178,169,157, .9);
 accent color: rgba(255,208,139,.9);
 */
 /****** UNIVERSAL STARTER ******/
@@ -37,7 +37,7 @@ header {
   padding-left: 20px;
 }
 
-/*Lower FILTER NAV/Yellow Navigation CSS*/
+/*Lower FILTER NAV / OUTPUT NAV Navigation CSS*/
 /****** FILTER NAV BOX ******/
 .filterNav {
   float: left;
@@ -64,8 +64,8 @@ header {
   width: 95%;
 }
 
-/****** YELLOW BOX ******/
-.yellowNav {
+/****** outputNav BOX ******/
+.outputNav {
   float: right;
   height: 500px;
   padding: 5px;
@@ -113,8 +113,6 @@ div .songTitle {
     font-weight: bold;
 
 }
-
-
 
 /****** ELEMENTS ADDED TO DOM (MusicHist2) ******/
 
