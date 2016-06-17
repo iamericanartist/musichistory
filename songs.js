@@ -34,6 +34,27 @@ var JSONParsed;
 function executeThisCodeAfterFileIsLoaded () {
   console.log("0 Successful File Load =", this.responseText); //ALL DATA returns from JSONParsed AS JSON OBJECT
   // console.log("event.target.responseText (aka) 'this' is =", event.target.responseText);   //returns same as "myRequest" above
+  
+
+          // //////////Added in class!///////////////
+          // ///// All inside the function!!!! /////
+          // console.log("0A event.target",event.target); //has readystate "4"
+          // var data = JSONParse(event.target.responseText);
+          // console.log("data", data );
+
+          // for (currentSong in data.songs) {
+          //   var songData = "";
+          //   var song = data.songs[currentSong]
+          //   songData += <div class="song-block>";
+          //   songData += `<h1>${song.title}</h1>`;
+          //   songData += 
+          // }
+
+
+
+          // //////////Added in class!///////////////
+
+
   JSONParsed = JSON.parse(this.responseText);  //JSON.parse() here to get a POJO (Plain Old JavaScript Object)
 
 // //These were just for discovery (duplicated below more than likely)  
