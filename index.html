@@ -20,6 +20,7 @@
 
     <div class="lowerNav">                      <!--    LOWERNAV start   -->
       <div id="filterNav" class="filterNav">    <!--      FILTERNAV start    -->
+
         <div><!-- Song Length Div -->
           <label>
             Song length:
@@ -49,6 +50,7 @@
 
         Genre:
         <div class="genreChecks"><!-- Genre Div -->
+
           <ul class="leftChecks">
             <li><input type="checkbox" name="rock"> <label for="checkbox">Rock</label></li>
             <li><input type="checkbox" name="pop"> <label for="checkbox">Pop</label></li>
@@ -68,55 +70,9 @@
 
       <div id="outputNav" class="outputNav"> <!--     outputNav start   -->
 
-      <!-- ITEMS ARE ADDED HERE WITH THE FOLLOWING ATTRIBUTES (ID'S AND CLASSES)
-      songDomEl.innerHTML += 
-      `<div class="addToDomEl songInfo">
-      <button id="deleteButton${i}" class="delButton" type="button" name="delete">remove</button>
-      <h2 class="songTitle">${JSONParsed.songs[i].title}</h2>
-      <ul class="songGroup">
-      <li class="artist">${JSONParsed.songs[i].artist}</li> | 
-      <li class="album">${JSONParsed.songs[i].album}</li> | 
-      <li class="genre">${JSONParsed.songs[i].genre}</li>
-      </ul></div>`
-      -->
-
-<!-- ORIGINAL SETUP OF outputNav BEGINS HERE -->
-<!--         <div class="songInfo">
-          <h2 class="songTitle">Song Name</h2>
-          <ul class="songGroup">
-            <li>Artist name</li> |
-            <li>Album name</li> |
-            <li>Genre</li>
-          </ul>
-        </div>
-         <div class="songInfo">
-          <h2 class="songTitle">Song Name</h2>
-          <ul class="songGroup">
-            <li>Artist name</li> |
-            <li>Album name</li> |
-            <li>Genre</li>
-          </ul>
-        </div>
-        <div class="songInfo">
-          <h2 class="songTitle">Song Name</h2>
-          <ul class="songGroup">
-            <li>Artist name</li> |
-            <li>Album name</li> |
-            <li>Genre</li>
-          </ul>
-        </div>
-        <div class="songInfo">
-          <h2 class="songTitle">Song Name</h2>
-          <ul class="songGroup">
-            <li>Artist name</li> |
-            <li>Album name</li> |
-            <li>Genre</li>
-          </ul>
-        </div> -->
-<!-- ORIGINAL SETUP OF outputNav ENDS HERE -->
-
       </div>                                 <!--     outputNav stop   -->
     </div>                              <!--    LOWERNAV stop   -->
+
   <script src="songs.js"></script>
   </body>
 </html>
