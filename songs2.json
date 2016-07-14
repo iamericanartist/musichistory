@@ -1,0 +1,64 @@
+{
+  "songs": [
+    {
+      "title": "Be Apart",
+      "artist": "Porches",
+      "album": "Pool",
+      "genre": "Rock"
+    },
+    {
+      "title": "Swell",
+      "artist": "Archy Marshall",
+      "album": "A New Place 2 Drown",
+      "genre": "Rock"
+    },
+    {
+      "title": "Salt",
+      "artist": "Golden Daze",
+      "album": "Golden Daze",
+      "genre": "Pop"
+    },
+    {
+      "title": "Separate Lives",
+      "artist": "HÆLOS",
+      "album": "Full Circle",
+      "genre": "Electronic"
+    },
+    {
+      "title": "Stircrazy",
+      "artist": "Cellars",
+      "album": "Phases",
+      "genre": "Pop"
+    },
+    {
+      "title": "Got It Good",
+      "artist": "KAYTRANADA",
+      "album": "99.9%",
+      "genre": "Electronic"
+    },
+    {
+      "title": "Heart Sings",
+      "artist": "Homeboy Sandman",
+      "album": "Kindness for Weakness",
+      "genre": "Hip Hop"
+    },
+    {
+      "title": "Masterpiece",
+      "artist": "Big Thief",
+      "album": "Masterpiece",
+      "genre": "Rock"
+    },
+    {
+      "title": "I'm On",
+      "artist": "Kamaiyah",
+      "album": "A Good Night in the Ghetto",
+      "genre": "Hip Hop"
+    },
+    {
+      "title": "Atomic Number",
+      "artist": "case/lang/viers",
+      "album": "case/lang/viers",
+      "genre": "Pop"
+    }
+  ]
+}

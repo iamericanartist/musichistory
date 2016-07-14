@@ -1,0 +1,39 @@
+@import 'lowerNav';
+/****** ELEMENTS ADDED TO DOM (MusicHist2) ******/
+
+/****** GENRE CHECKMARKS ******/
+.leftChecks {
+  float: left;
+  padding-left: 1px;
+  list-style: none;
+}
+.rightChecks {
+  float: right;
+  padding-right: 3px;
+  padding-left: 3px;
+  list-style: none; 
+}
+.genreChecks ul {
+  display: inline-block;
+  margin: 0 0 10px 0;
+}
+.genreChecks li {
+  padding-bottom: 5px;
+}
+
+/****** FILTER BUTTON ******/
+.filterButton1 {
+  margin: 15px auto 6px;
+  padding: 2px 5px;
+  width: 100px;
+  max-width: 80%;
+  background-color: rgba(120, 120, 120, 0.5);
+  border: 2px solid $border-color;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.filterButton {
+  clear: both;
+  margin: auto;
+  text-align: center;
+}

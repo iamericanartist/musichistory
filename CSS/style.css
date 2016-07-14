@@ -1,12 +1,12 @@
 /*My Colors:
 Header: rgba(065,131,178, .9)
-Left - filterNav: rgba(156,214,255, .9)
-    light Blue: rgba(181,224,255, .9);
-right(outputNav)nav: rgba(178,169,157, .9);
-accent color: rgba(255,208,139,.9);
+Left -  filterNav: rgba(156,214,255, .9)
+        light Blue: rgba(181,224,255, .9);
+        right(outputNav)nav: rgba(178,169,157, .9);
+        accent color: rgba(255,208,139,.9);
 */
 /****** UNIVERSAL STARTER ******/
-* {
+/** {
   box-sizing: border-box;
   font-family: Arial, Times, sans-serif;
 }
@@ -15,13 +15,13 @@ html {
   background: url(https://raw.githubusercontent.com/nss-day-cohort-14/static-web-group-project-dos-teamlunchroom/master/images/wall.jpg) no-repeat center center fixed; 
   background-size: cover;
 }
-body {
+body {*/
   /*background-color: rgba(181,224,255, .2);*/
-}
+/*}*/
 
 /*Upper Red Navigation CSS*/
 /****** RED BOX ******/
-header {
+/*header {
 	margin: 25px auto;
 	width: 80%;
   border-radius: 0px 20px 0px 0px;
@@ -36,12 +36,17 @@ header {
 .navbar {
   padding-left: 20px;
 }
-
+*/
 /*Lower FILTER NAV / OUTPUT NAV Navigation CSS*/
+/****** LOWER NAV GROUP DIV (ALL LOWER NAV) ******/
+/*.lowerNav {
+  display: flex;
+  justify-content: space-between;
+  max-height: 80vh;
+}*/
+
 /****** FILTER NAV BOX ******/
-.filterNav {
-  float: left;
-  height: 500px;
+/*.filterNav {
   padding: 5px;
   width: 29%;
   border-radius: 0px 0px 0px 20px;
@@ -63,24 +68,23 @@ header {
 .albumDrop {
   width: 95%;
 }
+*/
 
 /****** outputNav BOX ******/
-.outputNav {
-  float: right;
-  height: 500px;
+/*.outputNav {
   padding: 5px;
   width: 69.5%;
   border: 2px solid rgba(20, 20, 20, 0.5);
   background-color: rgba(178,169,157, .75);
   box-shadow: 0px 3px 4px 0px rgba(30,33,41,0.7);
-  overflow: auto;
+  overflow-y: scroll;
 }
 .addToDomEl {
   padding: 2px 20px;
   color: rgba(050,050,050, .8);
-  padding: 0px 15px;
+  padding: 0px 15px;*/
   /*display: none; Use to HIDE AN ELEMENT */
-}
+/*}
 .songGroup li {
   display: inline-block;
 }
@@ -112,12 +116,12 @@ div .songTitle {
   font-size: .75rem;
     font-weight: bold;
 
-}
+}*/
 
 /****** ELEMENTS ADDED TO DOM (MusicHist2) ******/
 
 /****** GENRE CHECKMARKS ******/
-.leftChecks {
+/*.leftChecks {
   float: left;
   padding-left: 1px;
   list-style: none;
@@ -134,10 +138,10 @@ div .songTitle {
 }
 .genreChecks li {
   padding-bottom: 5px;
-}
+}*/
 
 /****** FILTER BUTTON ******/
-.filterButton1 {
+/*.filterButton1 {
   margin: 15px auto 6px;
   padding: 2px 5px;
   width: 100px;
@@ -152,9 +156,9 @@ div .songTitle {
   margin: auto;
   text-align: center;
 }
-
+*/
 /****** lowerNav DIV GROUP ******/
-.lowerNav {
+/*.lowerNav {
   margin: auto;
   width: 80%;
-}
+}*/

@@ -1,0 +1,15 @@
+@import 'colors';
+
+/****** LOWER NAV GROUP DIV (ALL LOWER NAV) ******/
+.lowerNav {
+  display: flex;
+  justify-content: space-between;
+  max-height: 80vh;
+  /*min-height: 50vh;*/
+}
+
+/****** lowerNav DIV GROUP ******/
+.lowerNav {
+  margin: auto;
+  width: 80%;
+}
