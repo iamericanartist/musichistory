@@ -1,0 +1,18 @@
+@import 'colors';
+
+header {
+  margin: 25px auto;
+  width: 80%;
+  border-radius: 0px 20px 0px 0px;
+  border: 2px solid $border-color;
+  background-color: $headerNav-clr;
+  margin-bottom: 10px;
+  box-shadow: 0px 3px 4px 0px $shadow-color;
+}
+.navbar li {
+  display: inline-block;
+  font-size: 1.5rem;
+}
+.navbar {
+  padding-left: 20px;
+}

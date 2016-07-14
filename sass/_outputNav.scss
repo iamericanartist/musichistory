@@ -1,0 +1,47 @@
+@import 'lowerNav';
+
+/****** outputNav BOX ******/
+.outputNav {
+  padding: 5px;
+  width: 69.5%;
+  border: 2px solid $border-color;
+  background-color: $outputNav-clr;
+  box-shadow: 0px 3px 4px 0px $shadow-color;
+  overflow-y: scroll;
+}
+.addToDomEl {
+  padding: 2px 20px;
+  color: rgba(050,050,050, .8);
+  padding: 0px 15px;
+  /*display: none; Use to HIDE AN ELEMENT */
+}
+.songGroup li {
+  display: inline-block;
+}
+.songGroup {
+  padding: 0px 10px 3px;
+  margin: 5px 0px 5px;
+  border-bottom: 1px dashed $border-color;
+}
+div .songTitle {
+  color: rgba(20, 20, 20, 0.8);
+  padding-left: 0px;
+  margin: 15px 0px 0px;
+}
+.delButton {
+  float: right;
+  background-color: rgba(120, 120, 120, 0.3);
+  border: 1px solid rgba(020, 020, 020, 0.2);
+  color: $border-color;
+  border-radius: 5px;
+  font-size: .7rem;
+}
+.artist {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.genre {
+  color: $headerNav-clr;
+  font-size: .75rem;
+    font-weight: bold;
+}

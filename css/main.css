@@ -1,0 +1,178 @@
+/****** UNIVERSAL STARTER ******/
+* {
+  box-sizing: border-box;
+  font-family: Arial, Times, sans-serif; }
+
+html {
+  height: 100%;
+  background: url(https://raw.githubusercontent.com/nss-day-cohort-14/static-web-group-project-dos-teamlunchroom/master/images/wall.jpg) no-repeat center center fixed;
+  background-size: cover; }
+
+/*******************************/
+header {
+  margin: 25px auto;
+  width: 80%;
+  border-radius: 0px 20px 0px 0px;
+  border: 2px solid rgba(20, 20, 20, 0.5);
+  background-color: rgba(65, 131, 178, 0.75);
+  margin-bottom: 10px;
+  box-shadow: 0px 3px 4px 0px rgba(30, 33, 41, 0.7); }
+
+.navbar li {
+  display: inline-block;
+  font-size: 1.5rem; }
+
+.navbar {
+  padding-left: 20px; }
+
+/****** LOWER NAV GROUP DIV (ALL LOWER NAV) ******/
+.lowerNav {
+  display: flex;
+  justify-content: space-between;
+  max-height: 80vh;
+  /*min-height: 50vh;*/ }
+
+/****** lowerNav DIV GROUP ******/
+.lowerNav {
+  margin: auto;
+  width: 80%; }
+
+/****** LOWER NAV GROUP DIV (ALL LOWER NAV) ******/
+.lowerNav {
+  display: flex;
+  justify-content: space-between;
+  max-height: 80vh;
+  /*min-height: 50vh;*/ }
+
+/****** lowerNav DIV GROUP ******/
+.lowerNav {
+  margin: auto;
+  width: 80%; }
+
+/****** FILTER NAV BOX ******/
+.filterNav {
+  padding: 5px;
+  width: 29%;
+  border-radius: 0px 0px 0px 20px;
+  border: 2px solid rgba(20, 20, 20, 0.5);
+  background-color: rgba(156, 214, 255, 0.75);
+  color: rgba(50, 50, 50, 0.8);
+  box-shadow: 0px 3px 4px 0px rgba(30, 33, 41, 0.7); }
+
+.rangeSlider {
+  width: 95%;
+  margin-top: 20px; }
+
+.filterNav div {
+  margin: 10px 10px 20px 2px; }
+
+.artistDrop {
+  width: 95%; }
+
+.albumDrop {
+  width: 95%; }
+
+/****** LOWER NAV GROUP DIV (ALL LOWER NAV) ******/
+.lowerNav {
+  display: flex;
+  justify-content: space-between;
+  max-height: 80vh;
+  /*min-height: 50vh;*/ }
+
+/****** lowerNav DIV GROUP ******/
+.lowerNav {
+  margin: auto;
+  width: 80%; }
+
+/****** outputNav BOX ******/
+.outputNav {
+  padding: 5px;
+  width: 69.5%;
+  border: 2px solid rgba(20, 20, 20, 0.5);
+  background-color: rgba(178, 169, 157, 0.75);
+  box-shadow: 0px 3px 4px 0px rgba(30, 33, 41, 0.7);
+  overflow-y: scroll; }
+
+.addToDomEl {
+  padding: 2px 20px;
+  color: rgba(50, 50, 50, 0.8);
+  padding: 0px 15px;
+  /*display: none; Use to HIDE AN ELEMENT */ }
+
+.songGroup li {
+  display: inline-block; }
+
+.songGroup {
+  padding: 0px 10px 3px;
+  margin: 5px 0px 5px;
+  border-bottom: 1px dashed rgba(20, 20, 20, 0.5); }
+
+div .songTitle {
+  color: rgba(20, 20, 20, 0.8);
+  padding-left: 0px;
+  margin: 15px 0px 0px; }
+
+.delButton {
+  float: right;
+  background-color: rgba(120, 120, 120, 0.3);
+  border: 1px solid rgba(20, 20, 20, 0.2);
+  color: rgba(20, 20, 20, 0.5);
+  border-radius: 5px;
+  font-size: .7rem; }
+
+.artist {
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.genre {
+  color: rgba(65, 131, 178, 0.75);
+  font-size: .75rem;
+  font-weight: bold; }
+
+/****** LOWER NAV GROUP DIV (ALL LOWER NAV) ******/
+.lowerNav {
+  display: flex;
+  justify-content: space-between;
+  max-height: 80vh;
+  /*min-height: 50vh;*/ }
+
+/****** lowerNav DIV GROUP ******/
+.lowerNav {
+  margin: auto;
+  width: 80%; }
+
+/****** ELEMENTS ADDED TO DOM (MusicHist2) ******/
+/****** GENRE CHECKMARKS ******/
+.leftChecks {
+  float: left;
+  padding-left: 1px;
+  list-style: none; }
+
+.rightChecks {
+  float: right;
+  padding-right: 3px;
+  padding-left: 3px;
+  list-style: none; }
+
+.genreChecks ul {
+  display: inline-block;
+  margin: 0 0 10px 0; }
+
+.genreChecks li {
+  padding-bottom: 5px; }
+
+/****** FILTER BUTTON ******/
+.filterButton1 {
+  margin: 15px auto 6px;
+  padding: 2px 5px;
+  width: 100px;
+  max-width: 80%;
+  background-color: rgba(120, 120, 120, 0.5);
+  border: 2px solid rgba(20, 20, 20, 0.5);
+  border-radius: 5px;
+  font-size: 16px; }
+
+.filterButton {
+  clear: both;
+  margin: auto;
+  text-align: center; }

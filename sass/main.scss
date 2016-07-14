@@ -1,3 +1,19 @@
-.asdf{
-  
+
+/****** UNIVERSAL STARTER ******/
+* {
+  box-sizing: border-box;
+  font-family: Arial, Times, sans-serif;
 }
+html {
+  height: 100%;
+  background: url(https://raw.githubusercontent.com/nss-day-cohort-14/static-web-group-project-dos-teamlunchroom/master/images/wall.jpg) no-repeat center center fixed; 
+  background-size: cover;
+}
+/*******************************/
+
+@import 'colors';
+@import 'header';
+@import 'lowerNav';
+@import 'filterNav';
+@import 'outputNav';
+@import 'outputElements';
