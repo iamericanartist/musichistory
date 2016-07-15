@@ -13,3 +13,11 @@
   margin: auto;
   width: 80%;
 }
+
+/****** SWITCH BETWEEN LIST/ADD VIEWS ******/
+.visible {
+  display: flex;
+}
+.hidden {
+  display: none;
+}
