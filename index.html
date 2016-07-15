@@ -1,87 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Music History</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <title>Music History</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
 
-  <body>
+	<header id="topNavArea">                        <!--    REDNAV start       -->
+    <ul class="viewNav">
+      <li>View Music</li> |
+      <li><a href="link-list">Add Music</a></li> |
+      <li><a href="link-add">Profile</a></li>
+    </ul>
+    
+  </header>                                   <!--    REDNAV stop        -->
 
-  	<header id="header">                        <!--    REDNAV start   -->
-      <ul class="navbar">
-        <li>View Music</li> |
-        <li><a href="index.html">Add Music</a></li> |
-        <li><a href="index.html">Profile</a></li>
-      </ul>
+
+  <div class="lowerNav">                      <!--    LOWERNAV start     -->
+
+    <div id="filterNav" class="filterNav">    <!--    FILTERNAV start    -->
+      <div><!-- Song Length Div -->
+        <label>
+          Song length:
+          <input type="range" class="rangeSlider">
+        </label>
+      </div>
       
-      <!--    INPUT start   -->
-      <!-- <div id="addMusic" class="hidden">    
-        <input type="text" id="songInput" placeholder="Song?">
-        <input type="text" id="artistInput" placeholder="Artist?">
-        <input type="text" id="albumInput" placeholder="Album?">
-        <button id="addButton">Add</button>
-      </div> -->
-    </header>                                   <!--    REDNAV stop   -->
+      <div><!-- Artist Div -->
+        <label class="artistDrop" for="artistDropDown">Artist:</label>
+          <p><select name="Artist" id="artistDropDown" class="artistDrop">
+            <option value="">options</option>
+            <option value="">Abba</option>
+            <option value="">AC/DC</option>
+            <option value="">Atmosphere</option>
+          </select></p>
+      </div>
+      
+      <div><!-- Album Div -->
+        <label class="albumDrop" for="albumDropDown">Album:</label>
+          <p><select name="Album" id="albumDropDown" class="albumDrop">
+            <option value="">options</option>
+            <option value="">36 Chambers</option>
+            <option value="">Dummy</option>
+            <option value="">Barter 6</option>
+          </select></p>
+      </div>
 
-    <div class="lowerNav">                      <!--    LOWERNAV start   -->
-      <div id="filterNav" class="filterNav">    <!--      FILTERNAV start    -->
+      Genre:
+      <div class="genreChecks"><!-- Genre Div -->
 
-        <div><!-- Song Length Div -->
-          <label>
-            Song length:
-            <input type="range" class="rangeSlider">
-          </label>
-        </div>
-        
-        <div><!-- Artist Div -->
-          <label class="artistDrop" for="artistDropDown">Artist:</label>
-            <p><select name="Artist" id="artistDropDown" class="artistDrop">
-              <option value="">options</option>
-              <option value="">Abba</option>
-              <option value="">AC/DC</option>
-              <option value="">Atmosphere</option>
-            </select></p>
-        </div>
-        
-        <div><!-- Album Div -->
-          <label class="albumDrop" for="albumDropDown">Album:</label>
-            <p><select name="Album" id="albumDropDown" class="albumDrop">
-              <option value="">options</option>
-              <option value="">36 Chambers</option>
-              <option value="">Dummy</option>
-              <option value="">Barter 6</option>
-            </select></p>
-        </div>
+        <ul class="leftChecks">
+          <li><input type="checkbox" name="rock"> <label for="checkbox">Rock</label></li>
+          <li><input type="checkbox" name="pop"> <label for="checkbox">Pop</label></li>
+          <li><input type="checkbox" name="blues"> <label for="checkbox">Blues</label></li>
+        </ul>
+        <ul class="rightChecks">
+          <li><input type="checkbox" name="electronic"> <label for="checkbox">Electronic</label></li>
+          <li><input type="checkbox" name="randb"> <label for="checkbox">R &amp B</label></li>
+          <li><input type="checkbox" name="hipHop"> <label for="checkbox">Hip Hop</label></li>
+        </ul>
+      </div>
 
-        Genre:
-        <div class="genreChecks"><!-- Genre Div -->
+      <div class="filterButton"><!-- BUTTON Div -->
+        <button class="filterButton1" type="button">Filter</button>
+      </div>
+    </div>                                    <!--     FILTERNAV stop    -->
 
-          <ul class="leftChecks">
-            <li><input type="checkbox" name="rock"> <label for="checkbox">Rock</label></li>
-            <li><input type="checkbox" name="pop"> <label for="checkbox">Pop</label></li>
-            <li><input type="checkbox" name="blues"> <label for="checkbox">Blues</label></li>
-          </ul>
-          <ul class="rightChecks">
-            <li><input type="checkbox" name="electronic"> <label for="checkbox">Electronic</label></li>
-            <li><input type="checkbox" name="randb"> <label for="checkbox">R &amp B</label></li>
-            <li><input type="checkbox" name="hipHop"> <label for="checkbox">Hip Hop</label></li>
-          </ul>
-        </div>
+    <div id="outputNav" class="outputNav">    <!--     outputNav start   -->
 
-        <div class="filterButton"><!-- BUTTON Div -->
-          <button class="filterButton1" type="button">Filter</button>
-        </div>
-      </div>                                 <!--      FILTERNAV stop   -->
+    </div>                                    <!--     outputNav stop    -->
+  
+    <!--    INPUT start   -->
+    <div id="addMusic" class="hidden">    
+      <input type="text" id="songInput" placeholder="Song?">
+      <input type="text" id="artistInput" placeholder="Artist?">
+      <input type="text" id="albumInput" placeholder="Album?">
+      <button id="addButton">Add</button>
+    </div>
 
-      <div id="outputNav" class="outputNav"> <!--     outputNav start   -->
+  </div>                                      <!--     LOWERNAV stop     -->
 
-      </div>                                 <!--     outputNav stop   -->
-    </div>                                   <!--     LOWERNAV stop    -->
-
-  <script src="songs.js"></script>
-  </body>
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="js/songs.js"></script>
+</body>
 </html>

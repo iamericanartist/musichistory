@@ -18,11 +18,11 @@ header {
   margin-bottom: 10px;
   box-shadow: 0px 3px 4px 0px rgba(30, 33, 41, 0.7); }
 
-.navbar li {
+.viewNav li {
   display: inline-block;
   font-size: 1.5rem; }
 
-.navbar {
+.viewNav {
   padding-left: 20px; }
 
 /****** LOWER NAV GROUP DIV (ALL LOWER NAV) ******/
@@ -37,6 +37,13 @@ header {
   margin: auto;
   width: 80%; }
 
+/****** SWITCH BETWEEN LIST/ADD VIEWS ******/
+.visible {
+  display: flex; }
+
+.hidden {
+  display: none; }
+
 /****** LOWER NAV GROUP DIV (ALL LOWER NAV) ******/
 .lowerNav {
   display: flex;
@@ -48,6 +55,13 @@ header {
 .lowerNav {
   margin: auto;
   width: 80%; }
+
+/****** SWITCH BETWEEN LIST/ADD VIEWS ******/
+.visible {
+  display: flex; }
+
+.hidden {
+  display: none; }
 
 /****** FILTER NAV BOX ******/
 .filterNav {
@@ -83,6 +97,13 @@ header {
 .lowerNav {
   margin: auto;
   width: 80%; }
+
+/****** SWITCH BETWEEN LIST/ADD VIEWS ******/
+.visible {
+  display: flex; }
+
+.hidden {
+  display: none; }
 
 /****** outputNav BOX ******/
 .outputNav {
@@ -140,6 +161,13 @@ div .songTitle {
 .lowerNav {
   margin: auto;
   width: 80%; }
+
+/****** SWITCH BETWEEN LIST/ADD VIEWS ******/
+.visible {
+  display: flex; }
+
+.hidden {
+  display: none; }
 
 /****** ELEMENTS ADDED TO DOM (MusicHist2) ******/
 /****** GENRE CHECKMARKS ******/

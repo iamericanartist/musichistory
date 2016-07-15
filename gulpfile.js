@@ -9,9 +9,7 @@ let source = require('vinyl-source-stream');
 let buffer = require('vinyl-buffer');
 let gutil = require('gulp-util');
 let sourcemaps = require('gulp-sourcemaps');
-let jasmine = require('gulp-jasmine');
 let sass = require('gulp-sass');
-let jasmineSpecReporter = require('jasmine-spec-reporter');
 
 let handleError = function(task) {
   return function(err) {
@@ -74,15 +72,15 @@ gulp.task('lint', function() {
 
   */
 
-gulp.task('specs', function() {
-  return gulp.src('./js/spec/*pec.js')
-    .pipe(jasmine({
-        reporter: new jasmineSpecReporter({
-        displayFailuresSummary: false,
-        }),
-        errorOnFail: false,
-    }));
-});
+// gulp.task('specs', function() {
+//   return gulp.src('./js/spec/*pec.js')
+//     .pipe(jasmine({
+//         reporter: new jasmineSpecReporter({
+//         displayFailuresSummary: false,
+//         }),
+//         errorOnFail: false,
+//     }));
+// });
 
 
 /* 
@@ -107,10 +105,10 @@ gulp.task('sassify', function () {
  */
 gulp.task('watch', function() {
   // Run the link task when any JavaScript file changes
-  gulp.watch(['./js/**/*.js', './sass/**/*.scss'], ['lint', 'sassify', 'specs']);
+  gulp.watch(['./js/**/*.js', './sass/**/*.scss'], ['lint', 'sassify']);
 
   gutil.log(gutil.colors.bgGreen('Watching for changes...'));
 });
 
 // This task runs when you type `gulp` in the CLI
-gulp.task('default', ['lint', 'specs', 'sassify', 'watch'] /*, bundle*/ );
+gulp.task('default', ['lint', 'sassify', 'watch'] /*, bundle*/ );
