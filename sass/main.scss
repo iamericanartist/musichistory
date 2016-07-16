@@ -9,11 +9,19 @@ html {
   background: url(https://raw.githubusercontent.com/nss-day-cohort-14/static-web-group-project-dos-teamlunchroom/master/images/wall.jpg) no-repeat center center fixed; 
   background-size: cover;
 }
+
+/****** SWITCH BETWEEN LIST/ADD VIEWS ******/
+// .visible {
+//   display: flex;
+// }
+// .hidden {
+//   display: none;
+// }
 /*******************************/
 
 @import 'colors';           //collection of used colors
 @import 'topNavArea';       //top navigation area (View/Add/Profile selectors)
-@import 'lowerNav';         //overall lower navigation areas (contains filterNav & outputNav)
 @import 'filterNav';        //lower-left navigation area, where user controls view of music
 @import 'outputNav';        //lower-right area where songs are displayed
 @import 'outputElements';   //styling to the elements in filterNav
+@import 'lowerNav';         //overall lower navigation areas (contains filterNav & outputNav)
