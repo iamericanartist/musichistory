@@ -1,3 +1,73 @@
+
+***
+# NEED TO FINISH
+
+MH3 - switching between views
+MH5 - JQuery everything
+MH6 - filters working
+MH6 - field for every key (artist, album, title, genre, length)
+MH6 - fix "SAVE" feature (only getting undefined now)
+MH7 - Bootstrap
+
+
+
+
+***
+# Music History 7
+
+## Requirements
+## Using SASS
+
+All your current CSS should be converted into SASS, and you must use SASS from this point forward.
+
+## Using Automation
+
+As you are working, ensure that your Gulp/Grunt task is running at all times so that your JavaScript code is automatically checked as you're writing it, and your SASS is compiled into CSS.
+
+> **Note:** After you run your Gulp/Grunt task, if you add more JavaScript files, you need to restart grunt so that it recognizes the new file you added.
+
+## Using Bootstrap
+
+You need to have your application refactored to use the Bootstrap grid system for layout. From this point on, styling of your application is completely up to you, but you must be using Bootstrap grid system for layouts.
+
+
+***
+# Music History Part 6
+
+## Instructions
+
+Now is the time to make Music History a fully functional, single page, modular, asychronous, application.
+
+### Modular with Browserify
+
+1. Using Browerify, you should create several modules for the application.
+1. One module is responsible for loading songs from a JSON file and storing them in an array. This module should expose one method for getting the entire list of songs, and one method for adding a song to the array.
+1. One module is responsible for making the filtering form work. Therefore, it will need to use methods from the previous module.
+1. One module is responsible for showing the two views of the app (song list and song form).
+
+### Filtering
+
+1. When the user selects an artist, only songs from that artist should appear.
+1. When the user selects an album, only songs from that album should appear.
+
+### Adding Songs
+
+1. The new music form should have a field for every key on a song object. We started with just Artist, Album, and Title, but you can add more if you wish.
+1. The music form should be fully functional. When you click the *Save Song* button, a new object should be added to the array of songs. The DOM should also be immediately updated with the new song added.
+
+
+
+***
+# Music History Part 5
+
+## Instructions
+
+This one's simple.
+
+Implement jQuery in your Music History code. Every `innerHTML`, `getElementById`, `getElementByClassName`, event listener and XHR request. Convert 'em all.
+
+
+
 ***
 # Music History Part 4
 
@@ -16,6 +86,7 @@
 1. When the user clicks that button, load the songs from the second JSON file and append them to the bottom of the existing music, but before the More button.
 
 
+
 ***
 # Music History Part 3
 
@@ -32,6 +103,7 @@ Time to make Music History into a single page application. Before you begin plea
 1. When the user clicks on "Add Music" in the navigation bar, the *List Music View* should be hidden, and the *Add Music View* should be shown ([see example wireframe](https://moqups.com/chortlehoort/1E8LJX7r/p:a0cf17f7b)).
 1. When the user clicks on "List Music" in the navigation bar, the *Add Music View* should be hidden, and the *List Music View* should be shown ([see example wireframe](https://moqups.com/chortlehoort/1E8LJX7r/p:a8d99d401)).
 1. Once the user fills out the song form and clicks the add button, you should collect all values from the input fields, add the song to your array of songs, and update the song list in the DOM.
+
 
 
 ***
@@ -63,6 +135,7 @@ After you've got all of the requirements completed, follow these steps.
 1. If you see a vim screen with a default message in it just `:x` to save and exit.
 
 Your branch is now merged into the master branch and you can push the master branch up to Github with `git push origin master`.
+
 
 
 ***

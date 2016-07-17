@@ -6,7 +6,9 @@
   width: 29%;
   border-radius: 0px 0px 0px 20px;
   border: 2px solid $border-color;
-  background-color: $filterNav-clr;
+  // background-color: $filterNav-clr;
+  background: radial-gradient(ellipse at center, rgba(156,214,255, .40) 0%, $filterNav-clr 100%);
+
   color: rgba(050,050,050, .8);
   box-shadow: 0px 3px 4px 0px $shadow-color;
 }
