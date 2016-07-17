@@ -6,6 +6,7 @@
   width: 69.5%;
   border: 2px solid $border-color;
   background-color: $outputNav-clr;
+  background: radial-gradient(ellipse at center, rgba(239,250,255, .15) 0%, $outputNav-clr 100%);
   box-shadow: 0px 3px 4px 0px $shadow-color;
   overflow-y: scroll;
 }
@@ -13,7 +14,6 @@
   padding: 2px 20px;
   color: rgba(050,050,050, .8);
   padding: 0px 15px;
-  /*display: none; Use to HIDE AN ELEMENT */
 }
 .songGroup li {
   display: inline-block;

@@ -1,0 +1,51 @@
+@import 'colors';
+
+/****** add-view DIV GROUP ******/
+#add-view {
+  margin: auto;
+  width: 100%;
+  padding: 5px;
+  border-radius: 0px 0px 0px 20px;  
+  border: 2px solid $border-color;
+  background-color: $accent-orange;
+  background: radial-gradient(ellipse at center, rgba(255,208,139, .2) 0%, $accent-orange 100%);
+  box-shadow: 0px 3px 4px 0px $shadow-color;
+  min-height: 50vh;
+  max-height: 80vh;
+}
+#add-view>label {
+  padding: 0%;
+  margin: 5%;
+  display: block;
+  text-align: center;
+  letter-spacing: .1rem;
+}
+input[type="text"] {
+  padding: 10px;
+  margin: 3px 5% 0px 5%;
+  text-align: center;
+  display: block;
+  width: 90%;
+  background-color: $pale-blue;
+  color: $text-blue;
+}
+#addButton {
+  padding: 10px;
+  background-color: rgba(120, 120, 120, 0.5);
+  border: 2px solid $border-color;
+  margin: 3px 5% 0px 5%;
+  font-size: 1.5rem;
+  text-align: center;
+  border-radius: 0px 20px 0px 20px;  
+  box-shadow: 0px 3px 4px 0px $shadow-color;
+  width: 90%;
+}
+#addingEl {
+  color: $shadow-color;
+  font-size: 1.75rem;
+  text-align: center;
+  padding: 10px;
+  margin: 15px 5% 0px 5%;
+  display: block;
+  width: 90%;
+}

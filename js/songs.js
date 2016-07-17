@@ -6,6 +6,7 @@ var songDomEl= document.getElementById("outputNav"),        // connects to the D
     genreInputEl = document.getElementById("genreInput"),     // user input (song) saved as variable
     titleInputEl = document.getElementById("titleInput"),     // user input (song) saved as variable
     addButtonEl = document.getElementById("addButton"),     // our add button element (partaking in hte global listener)
+    addPrintEl = document.getElementById("addingEl"),     // our add button element (partaking in hte global listener)
     songArr = [];                                           // collects the song information after JSON parsing
 
 
@@ -62,7 +63,7 @@ document.body.addEventListener("click", function(event) {
 // Adds songs to "songArr" 
 function addContent(addUserSong) {
   songArr.push(addUserSong);
-  console.log("Current songArr:", songArr);
+  // console.log("Current songArr:", songArr);
   songDomEl.innerHTML +=       
       `<div class="addToDomEl songInfo">
       <button id="deleteButton${songArr.length -1 }" class="delButton" type="button" name="delete">remove</button>
@@ -76,14 +77,15 @@ function addContent(addUserSong) {
 
 // Strings together the user input
 function buildContent(album, artist, genre, title) {
-  // var songString = "You added \"" + title + "\" by " + artist + " on the " + genre + " album " + album + ".";
-    var addUserSong = {
-      title: `${title}`,
-      artist: `${artist}`,
-      album: `${album}`,
-      genre: `${genre}`
-    };
-  console.log("~~~~~", addUserSong);
+  var addUserSong = {
+    title: `${title}`,
+    artist: `${artist}`,
+    album: `${album}`,
+    genre: `${genre}`
+  };
+  addPrintEl.innerHTML = `You added "${title}" by ${artist} on the ${genre} album ${album}.`;
+  console.log("You added \"" + title + "\" by " + artist + " on the " + genre + " album " + album + ".");
+  // console.log("~~~~~", addUserSong);
   // console.log("buildContent fn songArr", songArr);
   addContent(addUserSong);
 }

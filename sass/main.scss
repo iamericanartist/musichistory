@@ -11,12 +11,12 @@ html {
 }
 
 /****** SWITCH BETWEEN LIST/ADD VIEWS ******/
-// .visible {
-//   display: flex;
-// }
-// .hidden {
-//   display: none;
-// }
+.visible {
+  display: block;
+}
+.hidden {
+  display: none;
+}
 /*******************************/
 
 @import 'colors';           //collection of used colors
@@ -24,4 +24,6 @@ html {
 @import 'filterNav';        //lower-left navigation area, where user controls view of music
 @import 'outputNav';        //lower-right area where songs are displayed
 @import 'outputElements';   //styling to the elements in filterNav
+@import 'addView';          //styling to the addView area
+@import 'profileView';      //styling to the profileView area
 @import 'lowerNav';         //overall lower navigation areas (contains filterNav & outputNav)
