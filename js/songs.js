@@ -67,11 +67,11 @@ function addContent(addUserSong) {
   songDomEl.innerHTML +=       
       `<div class="addToDomEl songInfo">
       <button id="deleteButton${songArr.length -1 }" class="delButton" type="button" name="delete">remove</button>
-      <h2 class="songTitle">${songArr.title}</h2>
+      <h2 class="songTitle">${addUserSong.title}</h2>
       <ul class="songGroup">
-      <li class="artist">${songArr.artist}</li> | 
-      <li class="album">${songArr.album}</li> | 
-      <li class="genre">${songArr.genre}</li>
+      <li class="artist">${addUserSong.artist}</li> | 
+      <li class="album">${addUserSong.album}</li> | 
+      <li class="genre">${addUserSong.genre}</li>
       </ul></div>`;
 }
 
