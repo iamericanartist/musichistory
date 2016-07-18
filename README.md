@@ -2,11 +2,9 @@
 ***
 # NEED TO FINISH
 
-MH3 - switching between views
-MH5 - JQuery everything
+
 MH6 - filters working
 MH6 - field for every key (artist, album, title, genre, length)
-MH6 - fix "SAVE" feature (only getting undefined now)
 MH7 - Bootstrap
 
 
