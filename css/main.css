@@ -9,12 +9,6 @@ html {
   background-size: cover; }
 
 /****** SWITCH BETWEEN LIST/ADD VIEWS ******/
-.visible {
-  display: block; }
-
-.hidden {
-  display: none; }
-
 /*******************************/
 header {
   margin: 25px auto;
