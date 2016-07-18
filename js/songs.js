@@ -21,6 +21,10 @@ var $songDomEl = $("#outputNav"),           // connects to the DOM ELEMENT "outp
     songArr = [];                           // collects the song information after JSON parsing
 
 
+  $("#add-view").hide();                        // hide DIV with ADD-VIEW HTML
+  $("#profile-view").hide();                    // hide DIV with PROFILE-VIEW HTML
+
+
 ////////////////////// JSON Interactions ///////////////////////
 fetch('./songs.json')                       // alternate way to get json data
   .then(response => response.json())        // returns JSON success for 1st JSON
@@ -69,6 +73,20 @@ function myDisplay() {
 $(document).on( "click", ".delButton",function(event){    // listens for "click" on ".delButton"
   $(this).parent().remove();                              // removes parent element of clicked ".delButton"
 });
+
+// animate deletion???!!!
+// for ( var i = 0; i < 5; i++ ) {
+//   $( "<div>" ).appendTo( document.body );
+// }
+// $( "div" ).click(function() {
+//   $( this ).hide( 2000, function() {
+//     $( this ).remove();
+//   });
+// });
+
+
+
+
 
 
 
